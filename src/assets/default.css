@@ -1,0 +1,69 @@
+.kanu-editor {
+  width: 100%;
+  min-width: calc(300em / 16);
+  min-height: calc(200em / 16);
+}
+
+.kanu-editor > div {
+  border: 1px solid var(--color-gray-3);
+}
+
+/* ? toolbar style */
+.kanu-editor .kanu-editor-toolbar {
+  padding: calc(2em / 16);
+  border-top-left-radius: calc(4em / 16);
+  border-top-right-radius: calc(4em / 16);
+  display: flex;
+  gap: calc(2em / 16);
+}
+.kanu-editor .kanu-editor-toolbar button {
+  border: none;
+  background-color: transparent;
+  padding: calc(4em / 16) calc(6em / 16);
+  line-height: 1;
+  cursor: pointer;
+  font-size: calc(16em / 16);
+}
+.kanu-editor .kanu-editor-toolbar button#font-bold {
+  font-weight: bold;
+}
+.kanu-editor .kanu-editor-toolbar button#font-italic {
+  font-style: italic;
+}
+.kanu-editor .kanu-editor-toolbar button#font-underline {
+  text-decoration: underline;
+}
+.kanu-editor .kanu-editor-toolbar button#font-strike {
+  text-decoration: line-through;
+}
+.kanu-editor .kanu-editor-toolbar .kanu-editor-toolbar-btngroup > button:first-child {
+  border-top-left-radius: calc(2em / 16);
+  border-bottom-left-radius: calc(2em / 16);
+}
+.kanu-editor .kanu-editor-toolbar .kanu-editor-toolbar-btngroup > button:last-child {
+  border-top-right-radius: calc(2em / 16);
+  border-bottom-right-radius: calc(2em / 16);
+}
+.kanu-editor .kanu-editor-toolbar button:hover {
+  background-color: var(--color-gray-0);
+}
+.kanu-editor .kanu-editor-toolbar .kanu-editor-toolbar-btngroup {
+  display: inline-flex;
+  border: 1px solid var(--color-gray-4);
+  border-radius: calc(2em / 16);
+}
+
+/* ? content style */
+.kanu-editor .kanu-editor-content {
+  padding: calc(8em / 16);
+}
+
+.kanu-editor .kanu-editor-resizer {
+  padding: calc(4em / 16) calc(8em / 16);
+  border-bottom-left-radius: calc(4em / 16);
+  border-bottom-right-radius: calc(4em / 16);
+}
+
+.kanu-editor div:not(:last-child) {
+  border-bottom: none;
+}

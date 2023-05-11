@@ -1,0 +1,6 @@
+{
+	"name": "kanueditor",
+	"version": "0.0.1",
+	"main": "./src/kanueditor.js",
+	"license": "MIT"
+}
