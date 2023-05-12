@@ -56,6 +56,14 @@
 /* ? content style */
 .kanu-editor .kanu-editor-content {
   padding: calc(8em / 16);
+  outline: none;
+  cursor: text;
+  color: 1px solid var(--color-black);
+}
+.kanu-editor .kanu-editor-content,
+.kanu-editor .kanu-editor-content:focus,
+.kanu-editor .kanu-editor-content:active {
+  outline: none;
 }
 
 .kanu-editor .kanu-editor-resizer {
